@@ -1,0 +1,7 @@
+node_modules
+.env
+_build
+.idea
+.yarn
+.cache
+dist
