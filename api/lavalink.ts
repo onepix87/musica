@@ -49,7 +49,7 @@ const _request = async (endpoint: string, data: Record<string, unknown>, options
 };
 
 export const resolveQuery = async (identifier: string): Promise<LoadResult> => {
-  return _request('/loadtracks', { identifier });
+  return _request('/loadtracks', { identifier }) as Promise<LoadResult>;
 };
 
 export const updatePlayer = async (sessionId: string, guildId: string, data: PlayerUpdateData) => {
